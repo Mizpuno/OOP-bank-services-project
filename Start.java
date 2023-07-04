@@ -52,12 +52,28 @@ public class Start {
                 }
 
                 case 2 -> {
-                    System.out.print("""
+                    String in1;
+                    while (true) {
+                        boolean nameRepeat = false;
+
+                        System.out.print("""
                                               
                             \033[0;93mCreate Account \033[0;90m--- \u001B[0m(Step 1/2)
                             You must complete your name to open new accounts.
                             \033[0;32m[USER]\u001B[0m fill up to complete:\s""");
-                    String in1 = input.next();
+                        in1 = input.next();
+
+                        for (String x : Databases.users_name) {
+                            if (x.equals(in1)) {
+                                nameRepeat = true;
+                                break;
+                            }
+                        }
+
+                        if (!nameRepeat) break;
+                        else new ErrorNotation(400);
+                    }
+
 
                     System.out.print("""
                                                        
@@ -69,6 +85,7 @@ public class Start {
                     Users newUser = new Users(in2,
                             new Accounts("Current Account", in1));
 
+                    Databases.users_name.add(in1);
                     Databases.users_package.put(newUser.getUser_reference(), newUser);
                     System.out.print("""
                             
