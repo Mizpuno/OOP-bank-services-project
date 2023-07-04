@@ -49,7 +49,7 @@ This is our sources that we use to develop in this project.
 
 ## Team members
 
-- [@Chaibadin Phumichart - (652110273)](https://www.github.com/octokatherine)
+- [@Chaibadin Phumichart - (652110273)]()
 - [@Norrapat Sai-ai - (652110289)](https://github.com/Norrapat0)
 - [@Nititorn Tunkim - (652110290)](https://github.com/Mizpuno)
 - [@Weeraya Kosandilok - (652110305)](https://github.com/Imweeraya)
