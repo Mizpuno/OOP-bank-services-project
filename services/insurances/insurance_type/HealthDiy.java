@@ -14,44 +14,45 @@ public class HealthDiy extends Accumulative {
 
     @Override
     public String detail() {
-        return "  __________________________________________________________________________________________________________________________\n"+
-                "|\t1. Inpatient medical treatment from injury or illness                                                                      |\n" +
-                "|\t1.1 room, board, and nursing service fees (Together up to 365 days)                                                        |\n" +
-                "|\t- Normal room rate per day                                                                                                 |\n"+
-                "|\t2,000\t3,000\t4,000                                                                                                      |\n" +
-                "|\t- intensive care unit fee ICU/CCU per day                                                                                  |\n" +
-                "|\t4,000\t6,000\t8,000                                                                                                      |\n" +
-                "|\t1.2 Medical expenses or general service charge                                                                             |\n" +
-                "|\t- general medical expenses Including continuing treatment within 30 days from the date of discharge from the hospital      |\n" +
-                "|\tactual payment                                                                                                             |\n" +
-                "|\t- Medical expenses for emergency accidents due to injuries within 24 hours and continuous treatment within 15 days         |\n"+
-                "|\t4,000\t6,000\t8,000                                                                                                      |\n" +
-                "|\t- Ambulance service charges\t are actually paid                                                                             |\n" +
+        return  "\u001B[40m|=============================================================================================================================|\u001B[0m\n"+
+                "\u001B[40m|  1. Inpatient medical treatment from injury or illness                                                                      |\u001B[0m\n" +
+                "\u001B[40m|    1.1 room, board, and nursing service fees (Together up to 365 days)                                                      |\u001B[0m\n" +
+                "\u001B[40m|        - Normal room rate per day                                                                                           |\u001B[0m\n"+
+                "\u001B[40m|\u001B[32m                              (planA)->2,000    ||   (planB)->3,000   ||   (planC)->4,000                                    \u001B[0m|\n" +
+                "\u001B[40m|        - intensive care unit fee ICU/CCU per day                                                                            |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                              (planA)->4,000    ||   (planB)->6,000   ||   (planC)->8,000                                    \u001B[0m|\n" +
+                "\u001B[40m|    1.2 Medical expenses or general service charge                                                                           |\u001B[0m\n" +
+                "\u001B[40m|        - general medical expenses Including continuing treatment within 30 days from the date of discharge from the hospital|\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                                ||   actual payment   ||                                                     \u001B[0m|\n" +
+                "\u001B[40m|        - Medical expenses for emergency accidents due to injuries within 24 hours and continuous treatment within 15 days   |\u001B[0m\n"+
+                "\u001B[40m|\u001B[32m                              (planA)->4,000    ||   (planB)->6,000   ||   (planC)->8,000                                    \u001B[0m|\n" +
+                "\u001B[40m|        - Ambulance service charges                                                                                          |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                             (planA,B,C) -> actual payment                                                   \u001B[0m|\n" +
                 //1.2 ค่ารักษาพยาบาล หรือค่าบริการทั่วไป\n" +
                 // "- ค่ารักษาพยาบาลทั่วไป รวมการรักษาต่อเนื่องภายใน 30 วัน นับจากวันที่ออกจากโรงพยาบาล\tจ่ายตามจริง\n" +
                 // "- ค่ารักษาพยาบาลอุบัติเหตุฉุกเฉินเนื่องจากการบาดเจ็บ ภายใน 24 ชั่วโมง และการรักษาต่อเนื่องภายใน 15 วัน\t4,000\t6,000\t8,000\n" +
                 //  "- ค่าบริการรถพยาบาล\tจ่ายตามจริง\n" +
-                "|\t1.3 Doctor's fee for surgical treatment                                                                                    |\n" +
-                "|\t- Surgical and procedure fees                                                                                              |\n" +
-                "|\tactually paid                                                                                                              |\n" +
-                "|\t- Surgical Consultation Fee in case of surgery (included in the cost of surgeons and procedures)                           |\n" +
-                "|\tactually paid                                                                                                              |\n" +
+                "\u001B[40m|    1.3 Doctor's fee for surgical treatment                                                                                  |\u001B[0m\n" +
+                "\u001B[40m|        - Surgical and procedure fees                                                                                        |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                             (planA,B,C) -> actual payment                                                   \u001B[0m|\n" +
+                "\u001B[40m|        - Surgical Consultation Fee in case of surgery (included in the cost of surgeons and procedures)                     |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                             (planA,B,C) -> actual payment                                                   \u001B[0m|\n" +
                 //"1.3 ค่าธรรมเนียมแพทย์สำหรับการรักษาโดยการผ่าตัด\n"
                 // "- ค่าแพทย์ผ่าตัดและหัตถการ \tจ่ายตามจริง\n" +
                 // "- ค่าปรึกษาทางการผ่าตัด กรณีมีการผ่าตัด (รวมอยู่ในค่าแพทย์ผ่าตัดและหัตถการ)\tจ่ายตามจริง\n" +
-                "|\t1.4 Doctor visit fee or the cost of consulting a specialist specialist                                                     |\n" +
-                "|\t- Medical care fee 1 time/day (total up to 365 days)                                                                       |\n" +
-                "|\tactual payment                                                                                                             |\n" +
-                "|\t- Surgical consultant fee in case of no surgery (Included in general medical expenses)                                     |\n" +
-                "|\tactually paid                                                                                                              |\n" +
+                "\u001B[40m|    1.4 Doctor visit fee or the cost of consulting a specialist specialist                                                   |\u001B[0m\n" +
+                "\u001B[40m|        - Medical care fee 1 time/day (total up to 365 days)                                                                 |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                             (planA,B,C) -> actual payment                                                   \u001B[0m|\n" +
+                "\u001B[40m|        - Surgical consultant fee in case of no surgery (Included in general medical expenses)                               |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                             (planA,B,C) -> actual payment                                                   \u001B[0m|\n" +
                 //1.4 ค่าแพทย์เยี่ยมไข้ หรือค่าปรึกษาแพทย์ผู้เชี่ยวชาญเฉพาะโรค\n" +
                 //"- ค่าดูแลโดยแพทย์เจ้าของไข้ 1 ครั้ง/วัน (รวมสูงสุด 365 วัน)\tจ่ายตามจริง\n" +
                 //"- ค่าแพทย์ที่ปรึกษาทางการผ่าตัด กรณีไม่มีการผ่าตัด (รวมอยู่ในค่ารักษาพยาบาลทั่วไป)\tจ่ายตามจริง\n
-                "|\t2. Personal accident insurance (Personal Accident)                                                                         |\n" +
-                "|\tBenefit in case of death loss of limbs, sight or total permanent disability as a result of an accident Extend coverage     |\n" +
-                "|\tfor accidents from driving or being a passenger on a motorcycle                                                            |\n" +
-                "|\t100,000                                                                                                                    |\n"+
-                "  __________________________________________________________________________________________________________________________\n";
+                "\u001B[40m|  2. Personal accident insurance (Personal Accident)                                                                         |\u001B[0m\n" +
+                "\u001B[40m|            Benefit in case of death loss of limbs, sight or total permanent disability as a result of an accident           |\u001B[0m\n" +
+                "\u001B[40m|         Extend coverage for accidents from driving or being a passenger on a motorcycle                                     |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m                                                (planA,B,C) -> 100,000                                                       \u001B[0m|\n" +
+                "\u001B[40m|=============================================================================================================================|\u001B[0m\n";
         //"2. การประกันอุบัติเหตุส่วนบุคคล (Personal Accident)\n" +
         //"ผลประโยชน์กรณีการเสียชีวิต การสูญเสียอวัยวะ สายตา หรือทุพพลภาพถาวรสิ้นเชิงอันเนื่องมาจากอุบัติเหตุ ขยายความคุ้มครองอุบัติเหตุจากการขับขี่หรือโดยสารรถจักรยานยนต์\t100,000";
     }

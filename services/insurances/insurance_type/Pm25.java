@@ -15,38 +15,38 @@ public class Pm25 extends Accumulative {
 
     @Override
     public String shortdetail() {
-        return  " _______________________________________________________________________\n"+
-                "|\t-being diagnosed by a doctor for the first time as a serious disease |\n" +
-                "|\t-Severe COPD/end-stage lung disease                                  |\n" +
-                "|\t-First myocardial infarction from ischemia                           |\n" +
-                "|\t-Cerebrovascular disease or blockage                                 |\n" +
-                "|\t-metastatic cancer                                                   |\n" +
-                "|\t-Cardiovascular surgery                                              |\n" +
-                "|\t-chronic kidney disease                                              |\n" +
-                "|\t-liver failure                                                       |\n" +
-                "|\t-to have a cell transplant or bone marrow transplant                 |\n" +
-                "|\t-coma situation                                                      |\n" +
-                "|\t-Total permanent disability in the event of an accident or injury    |\n" +
-                " _______________________________________________________________________";
+        return  "\u001B[40m|========================================================================|\u001B[0m\n"+
+                "\u001B[40m|  -being diagnosed by a doctor for the first time as a serious disease  |\u001B[0m\n" +
+                "\u001B[40m|  -Severe COPD/end-stage lung disease                                   |\u001B[0m\n" +
+                "\u001B[40m|  -First myocardial infarction from ischemia                            |\u001B[0m\n" +
+                "\u001B[40m|  -Cerebrovascular disease or blockage                                  |\u001B[0m\n" +
+                "\u001B[40m|  -metastatic cancer                                                    |\u001B[0m\n" +
+                "\u001B[40m|  -Cardiovascular surgery                                               |\u001B[0m\n" +
+                "\u001B[40m|  -chronic kidney disease                                               |\u001B[0m\n" +
+                "\u001B[40m|  -liver failure                                                        |\u001B[0m\n" +
+                "\u001B[40m|  -to have a cell transplant or bone marrow transplant                  |\u001B[0m\n" +
+                "\u001B[40m|  -coma situation                                                       |\u001B[0m\n" +
+                "\u001B[40m|  -Total permanent disability in the event of an accident or injury     |\u001B[0m\n" +
+                "\u001B[40m|========================================================================|\u001B[0m\n";
 
     }
 
     @Override
     public String detail() {
-        return  " _______________________________________________________________________\n"+
-                "|\t-being diagnosed by a doctor for the first time as a serious disease |\n" +
-                "|\t-Severe COPD/end-stage lung disease                                  |\n" +
-                "|\t-First myocardial infarction from ischemia                           |\n" +
-                "|\t-Cerebrovascular disease or blockage                                 |\n" +
-                "|\t-metastatic cancer                                                   |\n" +
-                "|\t-Cardiovascular surgery                                              |\n" +
-                "|\t-chronic kidney disease                                              |\n" +
-                "|\t-liver failure                                                       |\n" +
-                "|\t-to have a cell transplant or bone marrow transplant                 |\n" +
-                "|\t-coma situation                                                      |\n" +
-                "|\t-Total permanent disability in the event of an accident or injury    |\n" +
-                "|\t(planA)--->50,000\t(planB)--->100,000\t(planC)--->200,000           |\n"+
-                " _______________________________________________________________________";
+        return  "\u001B[40m|========================================================================|\u001B[0m\n"+
+                "\u001B[40m|  -being diagnosed by a doctor for the first time as a serious disease  |\u001B[0m\n" +
+                "\u001B[40m|  -Severe COPD/end-stage lung disease                                   |\u001B[0m\n" +
+                "\u001B[40m|  -First myocardial infarction from ischemia                            |\u001B[0m\n" +
+                "\u001B[40m|  -Cerebrovascular disease or blockage                                  |\u001B[0m\n" +
+                "\u001B[40m|  -metastatic cancer                                                    |\u001B[0m\n" +
+                "\u001B[40m|  -Cardiovascular surgery                                               |\u001B[0m\n" +
+                "\u001B[40m|  -chronic kidney disease                                               |\u001B[0m\n" +
+                "\u001B[40m|  -liver failure                                                        |\u001B[0m\n" +
+                "\u001B[40m|  -to have a cell transplant or bone marrow transplant                  |\u001B[0m\n" +
+                "\u001B[40m|  -coma situation                                                       |\u001B[0m\n" +
+                "\u001B[40m|  -Total permanent disability in the event of an accident or injury     |\u001B[0m\n" +
+                "\u001B[40m|\u001B[32m     (planA)->50,000   ||   (planB)->100,000   ||   (planC)->200,000    \u001B[0m|\n" +
+                "\u001B[40m|========================================================================|\u001B[0m\n";
     }
 
     @Override
