@@ -4,7 +4,7 @@
 Using the principle of object-oriented programming, we created the bank services system. There is a virtual bank application running on a "console, terminal" in our software.
 
 
-## Screenshots
+## XML Diagram
 
 ![App Screenshot](https://cdn.pic.in.th/file/picinth/Untitled-Diagram.jpeg)
 
